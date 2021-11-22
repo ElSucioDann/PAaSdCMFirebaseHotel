@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "394229415337",
+    "firebase_url": "https://crudfirebasehoteles-default-rtdb.firebaseio.com",
+    "project_id": "crudfirebasehoteles",
+    "storage_bucket": "crudfirebasehoteles.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:394229415337:android:7ef4e5df17ab77e842d8b8",
+        "android_client_info": {
+          "package_name": "com.example.paasdcmfirebasehotel"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "394229415337-phcjslnm1kjqun3mpmu6a89v5pq9q98v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDQ6V_2XT2wxrDBlLyvkbMR3F_5CL7pWfc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "394229415337-phcjslnm1kjqun3mpmu6a89v5pq9q98v.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

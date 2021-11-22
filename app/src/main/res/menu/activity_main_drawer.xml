@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="@string/menu_home" />
+
+        <item
+            android:id="@+id/nav_reservacion"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="@string/menu_reservacion" />
+
+        <item
+            android:id="@+id/nav_listar_mis_reservaciones_usuario"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="@string/menu_listar_mis_reservaciones_usuario"
+            android:visible="true"/>
+
+        <item
+            android:id="@+id/nav_mi_hotel"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="@string/menu_mi_hotel" />
+
+        <item
+            android:id="@+id/nav_mis_habitaciones"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="@string/menu_mis_habitaciones" />
+
+        <item
+            android:id="@+id/nav_listar_mis_habitaciones"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="@string/menu_listar_mis_habitaciones"
+            android:visible="true"/>
+
+        <item
+            android:id="@+id/nav_listar_mis_reservaciones"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="@string/menu_listar_mis_reservaciones"
+            android:visible="true"/>
+
+        <item
+            android:id="@+id/nav_listar"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="@string/menu_listar"
+            android:visible="false"/>
+
+
+
+
+
+
+
+    </group>
+</menu>

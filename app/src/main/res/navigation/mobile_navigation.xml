@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.paasdcmfirebasehotel.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_reservacion"
+        android:name="com.example.paasdcmfirebasehotel.ui.reservacion.ReservacionFragment"
+        android:label="@string/menu_reservacion"
+        tools:layout="@layout/fragment_reservacion" />
+
+    <fragment
+        android:id="@+id/nav_listar_mis_reservaciones_usuario"
+        android:name="com.example.paasdcmfirebasehotel.ui.listarmisreservacionesusuario.ListarMisReservacionesUsuarioFragment"
+        android:label="@string/menu_listar_mis_reservaciones_usuario"
+        tools:layout="@layout/fragment_listar_mis_reservaciones_usuario" />
+
+    <fragment
+        android:id="@+id/nav_mi_hotel"
+        android:name="com.example.paasdcmfirebasehotel.ui.mihotel.MiHotelFragment"
+        android:label="@string/menu_mi_hotel"
+        tools:layout="@layout/fragment_mihotel" />
+
+    <fragment
+        android:id="@+id/nav_mis_habitaciones"
+        android:name="com.example.paasdcmfirebasehotel.ui.mishabitaciones.MisHabitacionesFragment"
+        android:label="@string/menu_mis_habitaciones"
+        tools:layout="@layout/fragment_mis_habitaciones" />
+
+    <fragment
+        android:id="@+id/nav_listar_mis_habitaciones"
+        android:name="com.example.paasdcmfirebasehotel.ui.listarmishabitaciones.ListarMisHabitacionesFragment"
+        android:label="@string/menu_listar_mis_habitaciones"
+        tools:layout="@layout/fragment_listar_mis_habitaciones" />
+
+    <fragment
+        android:id="@+id/nav_listar_mis_reservaciones"
+        android:name="com.example.paasdcmfirebasehotel.ui.listarmisreservaciones.ListarMisReservacionesFragment"
+        android:label="@string/menu_listar_mis_reservaciones"
+        tools:layout="@layout/fragment_listar_mis_reservaciones" />
+
+    <fragment
+        android:id="@+id/nav_listar"
+        android:name="com.example.paasdcmfirebasehotel.ui.listar.ListarFragment"
+        android:label="@string/menu_listar"
+        tools:layout="@layout/fragment_listar" />
+
+
+</navigation>

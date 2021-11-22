@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.listarmisreservaciones.ListarMisReservacionesFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Listado de Mis Reservaciones"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:gravity="center_horizontal"/>
+
+        <RadioGroup
+            android:id="@+id/idListarMisReservacionesRadioGroupOpciones"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal">
+
+            <RadioButton
+                android:id="@+id/idListarMisReservacionesRadioButtonRecientes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Recientes"
+                android:textSize="10dp"/>
+
+            <RadioButton
+                android:id="@+id/idListarMisReservacionesRadioButtonDiasInicio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Días Inicio"
+                android:textSize="10dp"/>
+
+            <RadioButton
+                android:id="@+id/idListarMisReservacionesRadioButtonDiasFinal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Usuarios"
+                android:textSize="10dp"/>
+
+
+        </RadioGroup>
+
+        <ListView
+            android:id="@+id/idListarMisReservacionesListViewListar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:smoothScrollbar="true" />
+
+    </LinearLayout>
+
+</FrameLayout>
