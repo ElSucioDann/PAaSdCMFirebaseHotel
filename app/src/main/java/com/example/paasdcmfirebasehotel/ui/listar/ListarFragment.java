@@ -197,7 +197,7 @@ public class ListarFragment extends Fragment {
 
                 vaciarLista();
 
-                Toast.makeText(getContext(), "USUARIOS", Toast.LENGTH_SHORT).show();
+                //Toast.makeText(getContext(), "USUARIOS", Toast.LENGTH_SHORT).show();
 
                 databaseReference.child( "Usuarios1" ).orderByChild( "c_usu_ao_fecha_creacion" ).addValueEventListener(new ValueEventListener() {
                     @Override
@@ -315,7 +315,7 @@ public class ListarFragment extends Fragment {
                                     @Override
                                     public void onClick(View view) {
 
-                                        Toast.makeText(getContext(), "Aqui", Toast.LENGTH_SHORT).show();
+                                        //Toast.makeText(getContext(), "Aqui", Toast.LENGTH_SHORT).show();
 
                                         View dialogView = LayoutInflater.from(getContext()).inflate(R.layout.auxiliar_lista_informacion, null);
                                         ((TextView)dialogView.findViewById(R.id.idAuxiliarListaInformacionTextViewInformacion)).setText(listaUsuarios2.get(position));
@@ -367,7 +367,7 @@ public class ListarFragment extends Fragment {
 
                 vaciarLista();
 
-                Toast.makeText(getContext(), "HOTELES", Toast.LENGTH_SHORT).show();
+                //Toast.makeText(getContext(), "HOTELES", Toast.LENGTH_SHORT).show();
 
                 listaHotel1.clear();
                 listaHotel2.clear();
@@ -390,7 +390,7 @@ public class ListarFragment extends Fragment {
 
                             referencias.add( ds.getRef().getKey() );
                         }
-                        Toast.makeText(getContext(), String.valueOf(referencias.size() ) , Toast.LENGTH_SHORT).show();
+                        //Toast.makeText(getContext(), String.valueOf(referencias.size() ) , Toast.LENGTH_SHORT).show();
 
                         Log.d("--------VALOR", String.valueOf(referencias.size()) );
 
@@ -415,7 +415,7 @@ public class ListarFragment extends Fragment {
 
                                         referenciasIDHoteles.add( ds.getRef().getKey() );
                                     }
-                                    Toast.makeText(getContext(), String.valueOf(referenciasIDHoteles.size()) , Toast.LENGTH_SHORT).show();
+                                    //Toast.makeText(getContext(), String.valueOf(referenciasIDHoteles.size()) , Toast.LENGTH_SHORT).show();
 
                                     Log.d("--------VALOR_2", String.valueOf( referenciasIDHoteles.size()) );
 
@@ -546,7 +546,7 @@ public class ListarFragment extends Fragment {
                                                                     @Override
                                                                     public void onClick(View view) {
 
-                                                                        Toast.makeText(getContext(), "Aqui", Toast.LENGTH_SHORT).show();
+                                                                        //Toast.makeText(getContext(), "Aqui", Toast.LENGTH_SHORT).show();
 
                                                                         View dialogView = LayoutInflater.from(getContext()).inflate(R.layout.auxiliar_lista_informacion, null);
                                                                         ((TextView)dialogView.findViewById(R.id.idAuxiliarListaInformacionTextViewInformacion)).setText(listaHotel2.get(position));
@@ -693,7 +693,7 @@ public class ListarFragment extends Fragment {
 
                 vaciarLista();
 
-                Toast.makeText(getContext(), "HABITACIONES", Toast.LENGTH_SHORT).show();
+                //Toast.makeText(getContext(), "HABITACIONES", Toast.LENGTH_SHORT).show();
 
                 listaHabitaciones1.clear();
                 listaHabitaciones2.clear();
@@ -844,7 +844,7 @@ public class ListarFragment extends Fragment {
                                                             @Override
                                                             public void onClick(View view) {
 
-                                                                Toast.makeText(getContext(), "Aqui", Toast.LENGTH_SHORT).show();
+                                                                //Toast.makeText(getContext(), "Aqui", Toast.LENGTH_SHORT).show();
 
                                                                 View dialogView = LayoutInflater.from(getContext()).inflate(R.layout.auxiliar_lista_informacion, null);
                                                                 ((TextView)dialogView.findViewById(R.id.idAuxiliarListaInformacionTextViewInformacion)).setText(listaHabitaciones2.get(position));
@@ -912,7 +912,7 @@ public class ListarFragment extends Fragment {
             public void onClick(View view) {
 
                 vaciarLista();
-                Toast.makeText(getContext(), "RESERVACIONES", Toast.LENGTH_SHORT).show();
+                //Toast.makeText(getContext(), "RESERVACIONES", Toast.LENGTH_SHORT).show();
 
                 listaReservaciones1.clear();
                 listaReservaciones2.clear();
@@ -1043,7 +1043,7 @@ public class ListarFragment extends Fragment {
                                                 @Override
                                                 public void onClick(View view) {
 
-                                                    Toast.makeText(getContext(), "Aqui", Toast.LENGTH_SHORT).show();
+                                                    //Toast.makeText(getContext(), "Aqui", Toast.LENGTH_SHORT).show();
 
                                                     View dialogView = LayoutInflater.from(getContext()).inflate(R.layout.auxiliar_lista_informacion, null);
                                                     ((TextView)dialogView.findViewById(R.id.idAuxiliarListaInformacionTextViewInformacion)).setText(listaReservaciones2.get(position));

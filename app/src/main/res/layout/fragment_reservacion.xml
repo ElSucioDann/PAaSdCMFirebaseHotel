@@ -35,6 +35,7 @@
                         android:text="Reservación"
                         android:textSize="20dp"
                         android:textStyle="bold"
+                        android:textColor="@color/black"
                         android:gravity="center_horizontal"/>
 
                     <ImageView
@@ -49,6 +50,7 @@
                         android:text="Hotel"
                         android:textSize="20dp"
                         android:textStyle="bold"
+                        android:textColor="@color/black"
                         android:gravity="left"/>
 
                     <TextView
@@ -57,6 +59,7 @@
                         android:text="Filtrar por: "
                         android:textSize="18dp"
                         android:textStyle="bold"
+                        android:textColor="@color/black"
                         android:gravity="left"/>
 
                     <RadioGroup
@@ -89,6 +92,7 @@
                         android:text="Seleccione Hotel"
                         android:textSize="18dp"
                         android:textStyle="bold"
+                        android:textColor="@color/black"
                         android:gravity="left"/>
 
                 </LinearLayout>
@@ -134,6 +138,7 @@
                         android:text="Habitaciones"
                         android:textSize="20dp"
                         android:textStyle="bold"
+                        android:textColor="@color/black"
                         android:gravity="left"/>
 
                     <TextView
@@ -142,6 +147,7 @@
                         android:text="Filtrar por: "
                         android:textSize="18dp"
                         android:textStyle="bold"
+                        android:textColor="@color/black"
                         android:gravity="left"/>
 
                     <RadioGroup
@@ -182,6 +188,7 @@
                         android:text="Seleccione Habitación"
                         android:textSize="18dp"
                         android:textStyle="bold"
+                        android:textColor="@color/black"
                         android:gravity="left"/>
 
                     <ListView
@@ -215,7 +222,8 @@
                                 android:text="Fecha Inicio "
                                 android:textSize="18dp"
                                 android:textStyle="bold"
-                                android:gravity="left"/>
+                                android:gravity="left"
+                                android:textColor="@color/black"/>
 
                             <EditText
                                 android:id="@+id/idReservacionEditTextFechaInicio"
@@ -241,7 +249,8 @@
                                 android:text="Fecha Final  "
                                 android:textSize="18dp"
                                 android:textStyle="bold"
-                                android:gravity="left"/>
+                                android:gravity="left"
+                                android:textColor="@color/black"/>
                             <EditText
                                 android:id="@+id/idReservacionEditTextFechaFinal"
                                 android:layout_width="match_parent"
@@ -289,6 +298,7 @@
                                     android:text="Total de Días: "
                                     android:textSize="18dp"
                                     android:textStyle="bold"
+                                    android:textColor="@color/black"
                                     android:gravity="left"/>
                             </LinearLayout>
                             <LinearLayout
@@ -326,6 +336,7 @@
                                     android:text="Precio Total: "
                                     android:textSize="24dp"
                                     android:textStyle="bold"
+                                    android:textColor="@color/black"
                                     android:gravity="left"/>
                             </LinearLayout>
                             <LinearLayout
@@ -361,6 +372,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Reservar"
+                        android:backgroundTint="@color/azul"
                         android:layout_marginHorizontal="2dp"
                         android:layout_gravity="center_horizontal"/>
 

@@ -27,6 +27,7 @@
                     android:text="Mis Habitaciones"
                     android:textSize="20dp"
                     android:textStyle="bold"
+                    android:textColor="@color/black"
                     android:gravity="center_horizontal"/>
 
                 <ImageView
@@ -58,6 +59,7 @@
                             android:text="Tipo/Nombre"
                             android:textSize="18dp"
                             android:textStyle="bold"
+                            android:textColor="@color/black"
                             android:gravity="left"/>
 
                         <EditText
@@ -77,6 +79,7 @@
                                 android:text="Precio"
                                 android:textSize="18dp"
                                 android:textStyle="bold"
+                                android:textColor="@color/black"
                                 android:gravity="left"/>
 
                             <EditText
@@ -101,6 +104,7 @@
                                 android:text="Capacidad"
                                 android:textSize="18dp"
                                 android:textStyle="bold"
+                                android:textColor="@color/black"
                                 android:gravity="left"/>
 
                             <EditText
@@ -135,6 +139,7 @@
                         android:text="Piso"
                         android:textSize="18dp"
                         android:textStyle="bold"
+                        android:textColor="@color/black"
                         android:gravity="left"/>
 
                     <EditText
@@ -150,6 +155,7 @@
                         android:text="Habitación"
                         android:textSize="18dp"
                         android:textStyle="bold"
+                        android:textColor="@color/black"
                         android:gravity="left"/>
 
                     <EditText
@@ -176,6 +182,7 @@
                             android:text="Total de Camas"
                             android:textSize="18dp"
                             android:textStyle="bold"
+                            android:textColor="@color/black"
                             android:gravity="left"/>
 
                         <EditText
@@ -199,6 +206,7 @@
                             android:text="Tipo de Baño"
                             android:textSize="18dp"
                             android:textStyle="bold"
+                            android:textColor="@color/black"
                             android:gravity="left"/>
 
                         <Spinner
@@ -221,6 +229,7 @@
                             android:text="Tipo de Camas"
                             android:textSize="18dp"
                             android:textStyle="bold"
+                            android:textColor="@color/black"
                             android:gravity="left"/>
 
                         <Spinner
@@ -246,6 +255,7 @@
                         android:text="Balcón"
                         android:textSize="18dp"
                         android:textStyle="bold"
+                        android:textColor="@color/black"
                         android:gravity="left"/>
 
                     <RadioGroup
@@ -275,6 +285,7 @@
                     android:text="Descripción Adicional"
                     android:textSize="18dp"
                     android:textStyle="bold"
+                    android:textColor="@color/black"
                     android:gravity="left"/>
 
                 <EditText
@@ -300,6 +311,7 @@
                             android:text="Disponibilidad"
                             android:textSize="18dp"
                             android:textStyle="bold"
+                            android:textColor="@color/black"
                             android:gravity="left"/>
 
                         <RadioGroup
@@ -334,6 +346,7 @@
                             android:text="Status"
                             android:textSize="18dp"
                             android:textStyle="bold"
+                            android:textColor="@color/black"
                             android:gravity="left"/>
 
                         <RadioGroup
@@ -365,17 +378,9 @@
                     android:layout_height="wrap_content"
                     android:text="Registrar Habitación"
                     android:layout_marginHorizontal="2dp"
+                    android:backgroundTint="@color/azul"
                     android:layout_gravity="center_horizontal"/>
-
-
             </LinearLayout>
-
         </ScrollView>
-
     </LinearLayout>
-
-
-
-
-
 </FrameLayout>

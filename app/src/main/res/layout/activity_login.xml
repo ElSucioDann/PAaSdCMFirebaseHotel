@@ -73,22 +73,29 @@
                     android:layout_width="200dp"
                     android:layout_height="wrap_content"
                     android:text="Iniciar Sesión"
+                    android:backgroundTint="@color/azul"
                     android:layout_marginHorizontal="2dp"
                     android:layout_gravity="center_horizontal"/>
 
-                <Button
-                    android:id="@+id/idLoginButtonRegistrarse"
-                    android:layout_width="200dp"
+                <TextView
+                    android:id="@+id/idLoginEtRegistrarse"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Registrarse"
-                    android:layout_marginHorizontal="2dp"
-                    android:layout_gravity="center_horizontal"/>
+                    android:gravity="center"
+                    android:textSize="20dp"
+                    android:layout_marginTop="20dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/azul"
+                    android:layout_marginBottom="10dp"/>
+
 
                 <Button
                     android:id="@+id/idLoginButtonSalir"
                     android:layout_width="200dp"
                     android:layout_height="wrap_content"
                     android:text="Salir"
+                    android:backgroundTint="@color/rojo"
                     android:layout_marginHorizontal="2dp"
                     android:layout_gravity="center_horizontal"/>
 

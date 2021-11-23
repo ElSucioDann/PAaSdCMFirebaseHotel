@@ -370,7 +370,7 @@ public class ListarMisHabitacionesFragment extends Fragment {
                                                     @Override
                                                     public void onClick(View view) {
 
-                                                        Toast.makeText(getContext(), "Aqui", Toast.LENGTH_SHORT).show();
+                                                        //Toast.makeText(getContext(), "Aqui", Toast.LENGTH_SHORT).show();
 
                                                         View dialogView = LayoutInflater.from(getContext()).inflate(R.layout.auxiliar_lista_informacion, null);
                                                         ((TextView)dialogView.findViewById(R.id.idAuxiliarListaInformacionTextViewInformacion)).setText(listaHabitaciones2.get(position));

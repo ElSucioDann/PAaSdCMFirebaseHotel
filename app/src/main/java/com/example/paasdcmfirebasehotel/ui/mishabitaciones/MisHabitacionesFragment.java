@@ -232,7 +232,7 @@ public class MisHabitacionesFragment extends Fragment {
 
                 obtenerStrings();
 
-                Toast.makeText(getContext(), "HOTEL" + sHOT_ID_Hotel, Toast.LENGTH_LONG).show();
+                //Toast.makeText(getContext(), "HOTEL" + sHOT_ID_Hotel, Toast.LENGTH_LONG).show();
 
                 if (estaVacio()){
 
@@ -264,17 +264,13 @@ public class MisHabitacionesFragment extends Fragment {
                                     result.addOnSuccessListener(new OnSuccessListener<Uri>() {
                                         @Override
                                         public void onSuccess(Uri uri) {
-
                                             String aux = uri.toString();
                                             myUri = aux;
-
                                             sHAB_ID_Habitacion = aux_ID_Habitacion;
                                             sHAB_ID_Hotel = sHOT_ID_Hotel;
                                             sHAB_Razon_Social_Hotel = sHOT_Razon_Social;
-
                                             HashMap<String, Object> userMapHabitacion = new HashMap<>();
                                             userMapHabitacion.put("c_hab_aa_id_habitacion", sHAB_ID_Habitacion);
-
                                             userMapHabitacion.put("c_hab_ab_tipo_nombre", sHAB_TipoNombre);
                                             userMapHabitacion.put("c_hab_ac_foto_habitacion", myUri);
                                             userMapHabitacion.put("c_hab_ad_precio", sHAB_Precio);
@@ -286,14 +282,11 @@ public class MisHabitacionesFragment extends Fragment {
                                             userMapHabitacion.put("c_hab_aj_tipo_camas", sHAB_TipoCamas);
                                             userMapHabitacion.put("c_hab_ak_balcon", sHAB_Balcon);
                                             userMapHabitacion.put("c_hab_al_descripcion_adicional", sHAB_DescripcionAdicional);
-
                                             userMapHabitacion.put("c_hab_am_disponibilidad", sHAB_Disponibilidad);
                                             userMapHabitacion.put("c_hab_an_ref_id_hotel", sHAB_ID_Hotel);
                                             userMapHabitacion.put("c_hab_ao_ref_razon_social", sHAB_Razon_Social_Hotel);
-
                                             userMapHabitacion.put("c_hab_ap_fecha_creacion", getFechaMilisegundos() * -1 );
                                             userMapHabitacion.put("c_hab_aq_status", 1);
-
                                             databaseReferenceHabitaciones.child( "Habitaciones1" ).child( mAuth.getCurrentUser().getUid() ).child( sHOT_ID_Hotel ).child( aux_ID_Habitacion ).setValue( userMapHabitacion ).addOnCompleteListener(new OnCompleteListener<Void>() {
                                                 @Override
                                                 public void onComplete(@NonNull Task<Void> task) {

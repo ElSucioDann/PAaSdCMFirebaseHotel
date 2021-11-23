@@ -243,7 +243,7 @@ public class ReservacionFragment extends Fragment {
                 if ( !(aux_USU_ID_Filtrar.equals("")) && !(HOT_opcion1.equals("")) && !(HAB_opcion2.equals("")) && dateDifference >= 0 && !(FI.equals("")) && !(FF.equals("")) && !(HAB_Precio.equals("")) && !(precioTotal.equals("") ) ){
 
                     String aux_ID_Reservacion = UUID.randomUUID().toString();
-
+/*
                     Toast.makeText(getContext(),
                                     "ID RES: " + aux_ID_Reservacion
                                             + "\nID USU: " + aux_USU_ID_Filtrar
@@ -258,6 +258,8 @@ public class ReservacionFragment extends Fragment {
                                             + "\nS: " + 1
                                             + "\n"
                             , Toast.LENGTH_SHORT).show();
+
+ */
 
                     HashMap<String, Object> userMapReservacion = new HashMap<>();
 

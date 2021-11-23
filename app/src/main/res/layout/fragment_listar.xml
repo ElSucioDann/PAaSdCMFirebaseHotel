@@ -17,6 +17,7 @@
             android:text="Listado"
             android:textSize="20dp"
             android:textStyle="bold"
+            android:textColor="@color/black"
             android:gravity="center_horizontal"/>
 
         <RadioGroup

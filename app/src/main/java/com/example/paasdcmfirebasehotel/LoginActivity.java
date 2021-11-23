@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -24,7 +25,8 @@ public class LoginActivity extends AppCompatActivity {
     EditText objContrasenia;
 
     Button objIniciarSesion;
-    Button objRegistrarse;
+    TextView objRegistrarse;
+    //Button objRegistrarse;
     Button objSalir;
 
     //Firebase
@@ -130,7 +132,7 @@ public class LoginActivity extends AppCompatActivity {
         objContrasenia = findViewById(R.id.idLoginEditTextContrasenia);
 
         objIniciarSesion = findViewById(R.id.idLoginButtonIniciarSesion);
-        objRegistrarse = findViewById(R.id.idLoginButtonRegistrarse);
+        objRegistrarse = findViewById(R.id.idLoginEtRegistrarse);
         objSalir = findViewById(R.id.idLoginButtonSalir);
 
     }

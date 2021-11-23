@@ -277,15 +277,11 @@ public class RegisterActivity extends AppCompatActivity {
                                                                     String aux = uri.toString();
 
                                                                     String aux_ID = mAuth.getCurrentUser().getUid();
-
                                                                     myUri = aux;
-
                                                                     HashMap<String, Object> userMap = new HashMap<>();
                                                                     userMap.put("c_usu_aa_id_usuario", aux_ID);
-
                                                                     userMap.put("c_usu_ab_correo", sCorreo);
                                                                     userMap.put("c_usu_ac_contrasenia", sContrasenia);
-
                                                                     userMap.put("c_usu_ad_nombre", sNombre);
                                                                     userMap.put("c_usu_ae_apellidos", sApellidos);
                                                                     userMap.put("c_usu_af_ruta_img", myUri);
@@ -297,7 +293,6 @@ public class RegisterActivity extends AppCompatActivity {
                                                                     userMap.put("c_usu_al_sexo", sSexo);
                                                                     userMap.put("c_usu_am_fecha_nacimiento", sFechaNacimiento);
                                                                     userMap.put("c_usu_an_reputacion", 0);
-
                                                                     userMap.put("c_usu_ao_fecha_creacion", getFechaMilisegundos() * -1);
                                                                     userMap.put("c_usu_ap_status", 1);
                                                                     userMap.put("c_usu_aq_permiso_hotel", aux_permiso_hotel);
@@ -518,12 +513,10 @@ public class RegisterActivity extends AppCompatActivity {
     }
 
     public void fecha(){
-
         c = Calendar.getInstance();
         anio = c.get(Calendar.YEAR);
         mes = c.get(Calendar.MONTH);
         dia = c.get(Calendar.DAY_OF_MONTH);
-
         objFechaNacimiento.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -533,19 +526,14 @@ public class RegisterActivity extends AppCompatActivity {
                 dpd.show();
             }
         });
-
         setListener = new DatePickerDialog.OnDateSetListener() {
             @Override
             public void onDateSet(DatePicker view, int year, int month, int dayOfMonth) {
                 month = month + 1;
                 String date = dia +"/"+month+"/"+year;
                 objFechaNacimiento.setText(date);
-
-
             }
         };
-
-
     }
 
     private void asignar() {

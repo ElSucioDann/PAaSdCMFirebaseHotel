@@ -236,16 +236,11 @@ public class MiHotelFragment extends Fragment {
                                     result.addOnSuccessListener(new OnSuccessListener<Uri>() {
                                         @Override
                                         public void onSuccess(Uri uri) {
-
                                             String aux = uri.toString();
-
                                             //String aux_ID = mAuth.getCurrentUser().getUid();
-
                                             myUri = aux;
-
                                             HashMap<String, Object> userMapHotel = new HashMap<>();
                                             //userMapHotel.put("c_hot_aa_id_hotel", aux_ID_Hotel);
-
                                             userMapHotel.put("c_hot_ab_razon_social", sRazonSocial);
                                             userMapHotel.put("c_hot_ac_foto_hotel", myUri);
                                             userMapHotel.put("c_hot_ad_telefono", sTelefono);
@@ -257,10 +252,8 @@ public class MiHotelFragment extends Fragment {
                                             userMapHotel.put("c_hot_aj_calificacion", sCalificacion);
                                             userMapHotel.put("c_hot_ak_descripcion", sDescripcionAdicional);
                                             userMapHotel.put("c_hot_al_total_habitaciones", sTotalHabitaciones);
-
                                             userMapHotel.put("c_hot_am_fecha_creacion", sFechaCreacion);
                                             userMapHotel.put("c_hot_an_status", sStatus);
-
                                             databaseReferenceHotel.child( "Hoteles1" ).child( mAuth.getCurrentUser().getUid() ).child( aux_referencia ).updateChildren( userMapHotel ).addOnSuccessListener(new OnSuccessListener<Void>() {
                                                 @Override
                                                 public void onSuccess(Void unused) {
@@ -478,7 +471,7 @@ public class MiHotelFragment extends Fragment {
                 databaseReferenceHotel.child( "Hoteles1" ).child( mAuth.getCurrentUser().getUid() ).child( referencias.get(0) ).addListenerForSingleValueEvent(new ValueEventListener() {
                     @Override
                     public void onDataChange(@NonNull DataSnapshot snapshot) {
-                        Toast.makeText(getContext(), "Aqui", Toast.LENGTH_SHORT).show();
+                        //Toast.makeText(getContext(), "Aqui", Toast.LENGTH_SHORT).show();
 
                         if (snapshot.exists()) {
                             //String sNombre = snapshot.child("c_usu_ad_nombre").getValue().toString();

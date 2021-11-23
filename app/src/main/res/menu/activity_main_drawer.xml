@@ -6,50 +6,50 @@
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/nav_home"
-            android:icon="@drawable/ic_menu_camera"
+            android:icon="@drawable/home"
             android:title="@string/menu_home" />
 
         <item
             android:id="@+id/nav_reservacion"
-            android:icon="@drawable/ic_menu_slideshow"
+            android:icon="@drawable/hotel2"
             android:title="@string/menu_reservacion" />
 
         <item
             android:id="@+id/nav_listar_mis_reservaciones_usuario"
-            android:icon="@drawable/ic_menu_gallery"
+            android:icon="@drawable/lista"
             android:title="@string/menu_listar_mis_reservaciones_usuario"
             android:visible="true"/>
 
         <item
             android:id="@+id/nav_mi_hotel"
-            android:icon="@drawable/ic_menu_slideshow"
+            android:icon="@drawable/hotel"
             android:title="@string/menu_mi_hotel" />
 
         <item
             android:id="@+id/nav_editar_eliminar_reservaciones"
-            android:icon="@drawable/ic_menu_slideshow"
+            android:icon="@drawable/editar3"
             android:title="@string/menu_editar_eliminar_reservaciones" />
 
         <item
             android:id="@+id/nav_mis_habitaciones"
-            android:icon="@drawable/ic_menu_slideshow"
+            android:icon="@drawable/habitacion"
             android:title="@string/menu_mis_habitaciones" />
 
         <item
             android:id="@+id/nav_listar_mis_habitaciones"
-            android:icon="@drawable/ic_menu_gallery"
+            android:icon="@drawable/lista2"
             android:title="@string/menu_listar_mis_habitaciones"
             android:visible="true"/>
 
         <item
             android:id="@+id/nav_listar_mis_reservaciones"
-            android:icon="@drawable/ic_menu_gallery"
+            android:icon="@drawable/lista3"
             android:title="@string/menu_listar_mis_reservaciones"
             android:visible="true"/>
 
         <item
             android:id="@+id/nav_listar"
-            android:icon="@drawable/ic_menu_gallery"
+            android:icon="@drawable/lista2"
             android:title="@string/menu_listar"
             android:visible="false"/>
 
@@ -61,7 +61,7 @@
 
         <item
             android:id="@+id/nav_editar_eliminar_habitaciones"
-            android:icon="@drawable/ic_mis_habitaciones"
+            android:icon="@drawable/room"
             android:title="@string/menu_editar_eliminar_habitaciones"
             android:visible="true"/>
 

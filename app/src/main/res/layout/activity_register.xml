@@ -26,13 +26,14 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Registro"
-                    android:textSize="20dp"
+                    android:textSize="30dp"
+                    android:textColor="@color/black"
                     android:textStyle="bold"
                     android:gravity="center_horizontal"/>
 
                 <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="50dp"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
                     android:layout_gravity="center_horizontal"
                     android:src="@drawable/ic_recepcion"/>
 
@@ -42,6 +43,7 @@
                     android:text="Correo Electrónico"
                     android:textSize="18dp"
                     android:textStyle="bold"
+                    android:textColor="@color/black"
                     android:gravity="left"/>
 
                 <EditText
@@ -58,6 +60,7 @@
                     android:text="Contraseña"
                     android:textSize="18dp"
                     android:textStyle="bold"
+                    android:textColor="@color/black"
                     android:gravity="left"/>
 
                 <EditText
@@ -92,6 +95,7 @@
                             android:textSize="18dp"
                             android:textStyle="bold"
                             android:gravity="left"
+                            android:textColor="@color/black"
                             android:layout_marginRight="6dp"/>
 
                         <EditText
@@ -109,6 +113,7 @@
                             android:textSize="18dp"
                             android:textStyle="bold"
                             android:gravity="left"
+                            android:textColor="@color/black"
                             android:layout_marginRight="6dp"/>
 
                         <EditText
@@ -136,6 +141,7 @@
                         android:textSize="18dp"
                         android:textStyle="bold"
                         android:gravity="left"
+                        android:textColor="@color/black"
                         android:layout_marginRight="6dp"/>
 
                     <EditText
@@ -162,6 +168,7 @@
                         android:textSize="18dp"
                         android:textStyle="bold"
                         android:gravity="left"
+                        android:textColor="@color/black"
                         android:layout_marginRight="6dp"/>
 
                     <EditText
@@ -181,6 +188,7 @@
                         android:textSize="18dp"
                         android:textStyle="bold"
                         android:gravity="left"
+                        android:textColor="@color/black"
                         android:layout_marginHorizontal="6dp"/>
 
                     <Spinner
@@ -205,6 +213,7 @@
                         android:textSize="18dp"
                         android:textStyle="bold"
                         android:gravity="left"
+                        android:textColor="@color/black"
                         android:layout_marginRight="6dp"/>
 
                     <EditText
@@ -229,6 +238,7 @@
                         android:textSize="18dp"
                         android:textStyle="bold"
                         android:gravity="left"
+                        android:textColor="@color/black"
                         android:layout_marginRight="6dp"/>
 
                     <EditText
@@ -253,6 +263,7 @@
                         android:textSize="18dp"
                         android:textStyle="bold"
                         android:gravity="left"
+                        android:textColor="@color/black"
                         android:layout_marginRight="6dp"/>
 
                     <RadioGroup
@@ -288,6 +299,7 @@
                         android:textSize="18dp"
                         android:textStyle="bold"
                         android:gravity="left"
+                        android:textColor="@color/black"
                         android:layout_marginRight="6dp"/>
 
                     <EditText
@@ -315,6 +327,7 @@
                         android:textSize="18dp"
                         android:textStyle="bold"
                         android:gravity="left"
+                        android:textColor="@color/black"
                         android:layout_marginRight="6dp"/>
 
                     <RadioGroup
@@ -349,6 +362,7 @@
                         android:layout_width="200dp"
                         android:layout_height="wrap_content"
                         android:text="Registrar"
+                        android:backgroundTint="@color/azul"
                         android:layout_marginHorizontal="2dp"/>
 
                     <Button
@@ -363,6 +377,7 @@
                         android:layout_width="200dp"
                         android:layout_height="wrap_content"
                         android:text="Regresar a Login"
+                        android:backgroundTint="@color/rojo"
                         android:layout_marginHorizontal="2dp" />
 
                 </LinearLayout>

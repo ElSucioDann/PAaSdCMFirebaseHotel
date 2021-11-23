@@ -100,6 +100,7 @@ public class MainActivity extends AppCompatActivity {
         NavigationUI.setupWithNavController(navigationView, navController);
 
         nav_menu = navigationView.getMenu();
+        navigationView.setItemIconTintList(null);
 
         if (aux_tipo==1){//Hoteles
             nav_menu.findItem(R.id.nav_listar).setVisible(true);
@@ -109,7 +110,7 @@ public class MainActivity extends AppCompatActivity {
             nav_menu.findItem(R.id.nav_listar).setVisible(false);
         }
 
-        Toast.makeText(MainActivity.this, String.valueOf(aux_tipo), Toast.LENGTH_LONG).show();
+        //Toast.makeText(MainActivity.this, String.valueOf(aux_tipo), Toast.LENGTH_LONG).show();
 
 
         navController.addOnDestinationChangedListener(new NavController.OnDestinationChangedListener() {
@@ -267,7 +268,7 @@ public class MainActivity extends AppCompatActivity {
 
                         aux_tipo = 1;
 
-                        Toast.makeText(MainActivity.this, aux_tipo + sNombre + sTipoUsuario, Toast.LENGTH_SHORT).show();
+                        //Toast.makeText(MainActivity.this, aux_tipo + sNombre + sTipoUsuario, Toast.LENGTH_SHORT).show();
 
                         //nav_menu.findItem(R.id.nav_listar).setVisible(true);//finish();//startActivity( getIntent() );
 
@@ -277,7 +278,7 @@ public class MainActivity extends AppCompatActivity {
 
                         aux_tipo = 0;
 
-                        Toast.makeText(MainActivity.this, aux_tipo + sNombre + sTipoUsuario, Toast.LENGTH_SHORT).show();
+                        //Toast.makeText(MainActivity.this, aux_tipo + sNombre + sTipoUsuario, Toast.LENGTH_SHORT).show();
 
                         //nav_menu.findItem(R.id.nav_listar).setVisible(false);
 
