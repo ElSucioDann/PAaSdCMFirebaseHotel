@@ -91,7 +91,8 @@ public class MainActivity extends AppCompatActivity {
         // menu should be considered as top level destinations.
         mAppBarConfiguration = new AppBarConfiguration.Builder(
                 R.id.nav_home, R.id.nav_reservacion, R.id.nav_listar_mis_reservaciones, R.id.nav_listar, R.id.nav_mi_hotel, R.id.nav_mis_habitaciones, R.id.nav_listar_mis_habitaciones,
-                R.id.nav_listar_mis_reservaciones_usuario, R.id.nav_editar_mi_perfil, R.id.nav_editar_eliminar_reservaciones)
+                R.id.nav_listar_mis_reservaciones_usuario, R.id.nav_editar_mi_perfil, R.id.nav_editar_eliminar_reservaciones
+                ,R.id.nav_editar_eliminar_habitaciones)
                 .setOpenableLayout(drawer)
                 .build();
         navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_main);

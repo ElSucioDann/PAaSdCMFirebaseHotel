@@ -59,6 +59,12 @@
             android:title="@string/menu_editar_mi_perfil"
             android:visible="false"/>
 
+        <item
+            android:id="@+id/nav_editar_eliminar_habitaciones"
+            android:icon="@drawable/ic_mis_habitaciones"
+            android:title="@string/menu_editar_eliminar_habitaciones"
+            android:visible="true"/>
+
 
 
 
