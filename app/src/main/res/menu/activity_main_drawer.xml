@@ -26,6 +26,11 @@
             android:title="@string/menu_mi_hotel" />
 
         <item
+            android:id="@+id/nav_editar_eliminar_reservaciones"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="@string/menu_editar_eliminar_reservaciones" />
+
+        <item
             android:id="@+id/nav_mis_habitaciones"
             android:icon="@drawable/ic_menu_slideshow"
             android:title="@string/menu_mis_habitaciones" />
@@ -46,6 +51,12 @@
             android:id="@+id/nav_listar"
             android:icon="@drawable/ic_menu_gallery"
             android:title="@string/menu_listar"
+            android:visible="false"/>
+
+        <item
+            android:id="@+id/nav_editar_mi_perfil"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="@string/menu_editar_mi_perfil"
             android:visible="false"/>
 
 

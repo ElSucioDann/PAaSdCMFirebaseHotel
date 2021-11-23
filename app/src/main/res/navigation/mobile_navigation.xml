@@ -30,6 +30,12 @@
         tools:layout="@layout/fragment_mihotel" />
 
     <fragment
+        android:id="@+id/nav_editar_eliminar_reservaciones"
+        android:name="com.example.paasdcmfirebasehotel.ui.editareliminarreservaciones.EditarEliminarReservacionesFragment"
+        android:label="@string/menu_editar_eliminar_reservaciones"
+        tools:layout="@layout/fragment_editar_eliminar_reservaciones" />
+
+    <fragment
         android:id="@+id/nav_mis_habitaciones"
         android:name="com.example.paasdcmfirebasehotel.ui.mishabitaciones.MisHabitacionesFragment"
         android:label="@string/menu_mis_habitaciones"
@@ -52,6 +58,12 @@
         android:name="com.example.paasdcmfirebasehotel.ui.listar.ListarFragment"
         android:label="@string/menu_listar"
         tools:layout="@layout/fragment_listar" />
+
+    <fragment
+        android:id="@+id/nav_editar_mi_perfil"
+        android:name="com.example.paasdcmfirebasehotel.ui.editarmiperfil.EditarMiPerfilFragment"
+        android:label="@string/menu_editar_mi_perfil"
+        tools:layout="@layout/fragment_editar_mi_perfil" />
 
 
 </navigation>

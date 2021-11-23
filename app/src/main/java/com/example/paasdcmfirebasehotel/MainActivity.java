@@ -51,6 +51,8 @@ public class MainActivity extends AppCompatActivity {
 
     public static UsuarioDatosClass usuarioDatosClass = new UsuarioDatosClass();
 
+    NavController navController;
+
     //Firebase
     FirebaseAuth mAuth;
     DatabaseReference databaseReference;
@@ -89,20 +91,20 @@ public class MainActivity extends AppCompatActivity {
         // menu should be considered as top level destinations.
         mAppBarConfiguration = new AppBarConfiguration.Builder(
                 R.id.nav_home, R.id.nav_reservacion, R.id.nav_listar_mis_reservaciones, R.id.nav_listar, R.id.nav_mi_hotel, R.id.nav_mis_habitaciones, R.id.nav_listar_mis_habitaciones,
-                R.id.nav_listar_mis_reservaciones_usuario)
+                R.id.nav_listar_mis_reservaciones_usuario, R.id.nav_editar_mi_perfil, R.id.nav_editar_eliminar_reservaciones)
                 .setOpenableLayout(drawer)
                 .build();
-        NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_main);
+        navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_main);
         NavigationUI.setupActionBarWithNavController(this, navController, mAppBarConfiguration);
         NavigationUI.setupWithNavController(navigationView, navController);
 
         nav_menu = navigationView.getMenu();
 
-        if (aux_tipo==1){
+        if (aux_tipo==1){//Hoteles
             nav_menu.findItem(R.id.nav_listar).setVisible(true);
         }
 
-        if (aux_tipo==0){
+        if (aux_tipo==0){//Usuario standar
             nav_menu.findItem(R.id.nav_listar).setVisible(false);
         }
 
@@ -191,6 +193,12 @@ public class MainActivity extends AppCompatActivity {
                 Toast.makeText(MainActivity.this, "Hasta Pronto", Toast.LENGTH_SHORT).show();
                 mAuth.signOut();
                 startActivity(new Intent(MainActivity.this, LoginActivity.class));
+
+                break;
+
+            case R.id.action_editar_mi_perfil:
+
+                navController.navigate(R.id.nav_editar_mi_perfil);
 
                 break;
 

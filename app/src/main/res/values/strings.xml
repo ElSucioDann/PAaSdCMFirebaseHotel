@@ -16,6 +16,10 @@
     <string name="menu_listar_mis_reservaciones">Listar Mis Reservaciones</string>
     <string name="menu_listar_mis_habitaciones">Listar Mis Habitaciones</string>
 
+    <string name="menu_editar_mi_perfil">Editar Mi Perfil</string>
+
+    <string name="menu_editar_eliminar_reservaciones">Editar/Eliminar Reservaciones</string>
+
 
 
 
